@@ -1,16 +1,19 @@
-# Shopify React Frontend App
+# Announcement App
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
+A Shopify embedded app built with React, Express, Node.js, MongoDB, and the Shopify Admin GraphQL API.
 
-This repository is the frontend for Shopify’s app starter templates. **You probably don’t want to use this repository directly**, but rather through one of the templates and the [Shopify CLI](https://github.com/Shopify/shopify-cli).
+## Features
 
-## Developer resources
+- Save announcements
+- Store audit history in MongoDB
+- Sync announcement to Shopify Metafield
+- Display announcement using a Theme App Extension
 
-- [Introduction to Shopify apps](https://shopify.dev/apps/getting-started)
-  - [App authentication](https://shopify.dev/apps/auth)
-- [Shopify CLI command reference](https://shopify.dev/apps/tools/cli/app)
-- [Shopify API Library documentation](https://github.com/Shopify/shopify-node-api/tree/main/docs)
+## Tech Stack
 
-## License
-
-This repository is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+- React
+- Express
+- Node.js
+- MongoDB
+- Shopify Polaris
+- Shopify App Bridge

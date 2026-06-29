@@ -1,0 +1,54 @@
+{% assign announcement = shop.metafields.my_app.announcement.value %}
+
+{% if announcement != blank %}
+<div
+  id="announcement-banner-app"
+  {{ block.shopify_attributes }}
+>
+  {{ announcement }}
+</div>
+
+<style>
+#announcement-banner-app {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+
+    background: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Prevent the banner from covering the header */
+body{
+    padding-top:52px;
+}
+</style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement Banner",
+  "target": "body",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#e3f2fd"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#0d47a1"
+    }
+  ]
+}
+{% endschema %}

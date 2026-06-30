@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "71bb3e596c4d47a083ac1c3b4a36d43c"
-application_url = "https://example.com"
+application_url ="https://announcement-app-fdzw.onrender.com"
 embedded = true
 name = "announcement-app"
 
@@ -13,8 +13,9 @@ scopes = "write_products"
 api_version = "2026-07"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://announcement-app-fdzw.onrender.com/api/auth",
+  "https://announcement-app-fdzw.onrender.com/api/auth/callback"]
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
